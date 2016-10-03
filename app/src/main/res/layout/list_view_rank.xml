@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="70dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1."
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginTop="19dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/nr"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Score"
+        android:layout_alignBottom="@+id/nr"
+        android:layout_toRightOf="@+id/nr"
+        android:layout_marginLeft="2dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:id="@+id/score"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:layout_alignBottom="@+id/nr"
+        android:layout_toRightOf="@+id/score"
+        android:layout_marginLeft="7dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:id="@+id/name"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Place"
+        android:layout_alignBottom="@+id/nr"
+        android:layout_toRightOf="@+id/name"
+        android:layout_marginLeft="7dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:id="@+id/place"
+        />
+
+</RelativeLayout>

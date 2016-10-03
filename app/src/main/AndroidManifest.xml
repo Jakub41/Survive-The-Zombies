@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.jake_games.survivethezombies" >
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <!-- android:theme="@android:style/Theme.NoTitleBar" -->
+
+        <activity
+            android:name=".splashActivity"
+            android:label="@string/app_name"
+            android:noHistory="true"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.Splash" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.Main" >
+        </activity>
+
+        <activity
+            android:name=".RankingActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.Main" >
+        </activity>
+
+        <activity
+            android:name=".Game"
+            android:label="Compass Survival"
+            android:screenOrientation="landscape" >
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+        <activity
+            android:name=".TestActivity"
+            android:label="@string/app_name"
+            android:noHistory="true"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".PopUpCharacters"
+            android:label="ChooseChar"
+            android:noHistory="true"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.CustomTheme"
+            >
+        </activity>
+        <activity
+            android:name=".AccessibilityActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.Main" >
+        </activity>
+
+        <activity
+            android:name=".PopUpMaps"
+            android:label="Compass Survival"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.CustomTheme"
+            android:noHistory="true"
+
+            >
+        </activity>
+
+        <activity android:name=".SimpleUser"
+            android:screenOrientation="landscape"
+            android:noHistory="true"
+            />
+
+    </application>
+
+</manifest>

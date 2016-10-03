@@ -1,0 +1,178 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@drawable/background1"
+    tools:context="com.example.jake_games.survivethezombies.AccesibilidadActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Settings"
+        android:id="@+id/textView2"
+        android:textSize="45dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Test colorblind"
+        android:id="@+id/buttonRunTest"
+        android:onClick="runTest"
+
+        android:layout_toLeftOf="@+id/buttonScanner"
+        android:layout_toStartOf="@+id/buttonScanner"
+        android:layout_alignTop="@+id/buttonScanner"
+        android:layout_alignParentBottom="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Options colorblind"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#ffffff"
+        />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/textView3"
+        android:layout_alignEnd="@+id/textView3"
+        android:id="@+id/radioGroup"
+        android:layout_above="@+id/buttonApply"
+        >
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Protanopia"
+            android:id="@+id/radioButton"
+            android:checked="false"
+            android:textColor="#ffffff"
+            android:buttonTint="#ffffff"
+            android:backgroundTint="#ffffff"
+            />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Deuteranopia"
+            android:id="@+id/radioButton2"
+            android:checked="false"
+            android:textColor="#ffffff"
+            android:buttonTint="#ffffff"
+            android:backgroundTint="#ffffff"
+            />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tritanopia"
+            android:id="@+id/radioButton3"
+            android:checked="false"
+            android:textColor="#ffffff"
+            android:buttonTint="#ffffff"
+            android:backgroundTint="#ffffff"
+            />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ninguna"
+            android:id="@+id/radioButton4"
+            android:checked="false"
+            android:textColor="#ffffff"
+            android:buttonTint="#ffffff"
+            android:backgroundTint="#ffffff"
+            />
+    </RadioGroup>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Apply"
+        android:id="@+id/buttonApply"
+        android:onClick="applySettings"
+
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/buttonRunTest"
+        android:layout_toStartOf="@+id/buttonRunTest"
+        android:layout_alignTop="@+id/buttonRunTest" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Options"
+        android:id="@+id/textView4"
+        android:textColor="#ffffff"
+        android:layout_above="@+id/radioGroup"
+        android:layout_alignRight="@+id/buttonRunTest"
+        android:layout_alignEnd="@+id/buttonRunTest" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vibration active"
+        android:id="@+id/checkBox"
+        android:textColor="#ffffff"
+        android:backgroundTint="#ffffff"
+        android:buttonTint="#ffffff"
+        android:layout_alignTop="@+id/radioGroup"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sound effects"
+        android:id="@+id/checkBox2"
+        android:textColor="#ffffff"
+        android:backgroundTint="#ffffff"
+        android:buttonTint="#ffffff"
+        android:checked="false"
+        android:layout_below="@+id/checkBox"
+        android:layout_alignLeft="@+id/checkBox"
+        android:layout_alignStart="@+id/checkBox" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Music ambient"
+        android:id="@+id/checkBox3"
+        android:textColor="#ffffff"
+        android:backgroundTint="#ffffff"
+        android:buttonTint="#ffffff"
+        android:checked="false"
+        android:layout_below="@+id/checkBox2"
+        android:layout_alignLeft="@+id/checkBox2"
+        android:layout_alignStart="@+id/checkBox2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose Character"
+        android:id="@+id/buttonScanner"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignLeft="@+id/checkBox3"
+        android:layout_alignStart="@+id/checkBox3" />
+
+</RelativeLayout>
